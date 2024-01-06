@@ -1,0 +1,20 @@
+.footer {
+    .links {
+        p {
+            margin: .5vw 0;
+            transition: all .5s ease;
+
+            &:hover {
+                color: #582066;
+                cursor: pointer;
+                transform: translateX(3px);
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            p {
+                margin: 2vw 0;
+            }
+        }
+    }
+}

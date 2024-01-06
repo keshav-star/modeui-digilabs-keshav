@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw 6vw;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+
+    }
+
+    .menu {
+
+        a {
+            display: flex;
+            align-items: center;
+            margin: 0 1vw;
+            font-size: 1.2vw;
+            font-weight: 600;
+            transition: all .3s ease;
+
+            svg {
+                margin: 0 .3vw;
+                transition: all .3s ease;
+            }
+            &:hover{
+                color: #7065f0;
+                svg{
+                    rotate: 180deg;
+                }
+            }
+            
+        }
+    }
+
+    .login-signup {
+        font-weight: 600;
+
+        button {
+            padding: .3vw 1vw;
+            margin: 0 .5vw;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .hideit{
+            transform: translateX(-100vw);
+            position: absolute;
+            width: 20rem;
+            left: 0;
+            top: 18vh;
+            z-index: 9;
+            background-color: #EFE4F2;
+            padding: 2rem;
+            a{
+                font-size: 1rem;
+                padding: 1rem 0;
+            }
+        }
+        .mob-nav{
+            position: absolute;
+            transform: translateX(0);
+            border-radius:0 5vw 5vw 0;
+            width: 15rem;
+            left: 0vw;
+            top: 18vh;
+            z-index: 9;
+            background-color: #EFE4F2;
+            padding: 2rem;
+            a{
+                font-size: 1rem;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
